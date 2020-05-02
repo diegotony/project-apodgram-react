@@ -12,7 +12,7 @@ class ImageList extends Component{
 
     }
     componentDidMount() {
-        fetch( api.config().api.url, {mode:'cors'})
+        fetch( "http://apodgram-django-backend.herokuapp.com/images/", {mode:'cors'})
             .then(res => res.json())
             .then(data => {
 
