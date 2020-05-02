@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import ImageCard from "./Image_Card";
 import {CardColumns} from 'react-bootstrap'
-const api = require('firebase-functions')
 
 class ImageList extends Component{
     state = {
