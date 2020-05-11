@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import ImageCard from "./Image_Card";
-import {CardColumns} from 'react-bootstrap'
-
+import {CardColumns, Button} from 'react-bootstrap'
+import './Image_List.css'
 class ImageList extends Component{
     state = {
         images :[],
@@ -24,8 +24,17 @@ class ImageList extends Component{
                     image_size_10.push(data[i])
                 }
                 this.setState({imagesResult:image_size_10})
+            
             }).catch()
     }
+
+    addFive(){
+        this.setState({imagesResult:this.state.images.splice(0,this.state.min + 5)})
+        this.setState({min:this.state.min + 5 })
+        window.scrollTo({behavior:'smooth'})
+    }
+
+    
 
     render() {
         return(
@@ -35,6 +44,7 @@ class ImageList extends Component{
                         return (<ImageCard image={e} key={e.id}/>)
                     })}
                 </CardColumns>
+                <Button  onClick={() => this.addFive()}>Holi</Button>
 
             </div>
         )
