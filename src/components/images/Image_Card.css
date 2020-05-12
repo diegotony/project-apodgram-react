@@ -1,0 +1,43 @@
+.title {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 601px) {
+    .card {
+        margin: auto;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+    }
+
+    .img {
+        padding: 1em 1em 0em 1em;
+    }
+
+}
+
+
+@media only screen and (max-width: 574px) {
+    .card {
+        margin: 2em auto 2em auto;
+    }
+
+
+
+    .img {
+        padding: 1em 1em 0em 1em;
+    }
+
+    .details {
+        margin: 0.5em 0em 0em 0em;
+
+    }
+
+    .view {
+        padding: 1em;
+    }
+
+
+}
