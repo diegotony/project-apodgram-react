@@ -1,27 +1,42 @@
-import React, {Component} from "react";
-import {Card,Button} from 'react-bootstrap'
-
-class ImageCard extends Component{
+import React, { Component } from "react";
+import { Card, Button, Container, Row } from 'react-bootstrap'
+import './Image_Card.css'
+class ImageCard extends Component {
 
     render() {
-        const {image} = this.props
+        const { image } = this.props
         return (
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={image.url} />
-                <Card.Body>
-                    <Card.Title>{image.title}</Card.Title>
+
+            <Card className="card" >
+                <Card.Img className="img" variant="top" src={image.url} />
+                <Card.Body className="body">
+                    <Card.Title className="title"> <strong>{image.title}</strong>  </Card.Title>
                     <Card.Text>
-                        {image.explanation.substring(0,100)}...
+                        {image.explanation.substring(0, 100)}...
                     </Card.Text>
-                    <Card.Subtitle>
-                        {image.date}
-                    </Card.Subtitle>
-                    <div>
-                        <Button variant="primary" href={image.hdurl}>View HD</Button>
-                    </div>
+                    {/* <Card.Subtitle>
+                            {image.date}
+                        </Card.Subtitle> */}
+
+                    <Container>
+                        <Row>
+                            <Button className="btn-block view" href={image.hdurl}>View HD</Button>
+
+                            <Button className="btn-block details" href={image.hdurl}>More Details</Button>
+
+
+                        </Row>
+
+
+                    </Container>
+
+
+
 
                 </Card.Body>
             </Card>
+
+
         )
     }
 }
