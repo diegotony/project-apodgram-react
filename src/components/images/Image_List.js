@@ -38,13 +38,13 @@ class ImageList extends Component{
 
     render() {
         return(
-            <div>
+            <div id="columns">
                 <CardColumns>
                     {this.state.imagesResult.map((e)=>{
                         return (<ImageCard image={e} key={e.id}/>)
                     })}
                 </CardColumns>
-                <Button  onClick={() => this.addFive()}>Holi</Button>
+                    <Button className="btn btn-primary btn-lg btn-block btn-info loader"  onClick={() => this.addFive()}>Load More</Button>
 
             </div>
         )
