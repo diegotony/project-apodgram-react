@@ -1,11 +1,20 @@
-import React, {Component} from "react";
-import {Navbar,Form,FormControl,Button,Nav,NavDropdown} from 'react-bootstrap'
-class Menu extends Component{
+import React, { Component } from "react";
+import { Navbar, Form, FormControl, Button, Nav, NavDropdown } from 'react-bootstrap'
+class Menu extends Component {
     render() {
-        return(
+        return (
             <div>
-                <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="#home">ApodGram</Navbar.Brand>
+                <Navbar bg="dark" variant="dark" expand="lg">
+                    <Navbar.Brand href="#home">
+                        <img
+                            alt=""
+                            src="logo.svg"
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />{' '}
+      Apodgram
+    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
