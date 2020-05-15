@@ -3,7 +3,7 @@ import { Card, Button, Container, Row, Modal } from 'react-bootstrap'
 import './Image_Card.scss'
 const ImageCard = (props) => {
 
-    const [show, setShow] = useState(false);
+    const [show] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);

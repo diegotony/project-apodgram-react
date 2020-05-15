@@ -31,7 +31,6 @@ class ImageList extends Component{
     }
 
     
-
     render() {
         return(
             <div id="columns">
