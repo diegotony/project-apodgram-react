@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Card, Button, Container, Row } from 'react-bootstrap'
-import './Image_Card.css'
-class ImageCard extends Component {
+import './Image_Card.scss'
+const ImageCard  = (props) => {
 
-    render() {
-        const { image } = this.props
+    const [image, setIImage] = useState(props.image)
         return (
 
             <Card className="card" >
@@ -38,6 +37,6 @@ class ImageCard extends Component {
 
 
         )
-    }
+    
 }
 export default ImageCard;
