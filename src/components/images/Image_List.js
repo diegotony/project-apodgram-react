@@ -19,7 +19,7 @@ class ImageList extends Component{
     }
 
     addFive(){
-        fetch(`http://apodgram-django-backend.herokuapp.com/images/?page=${this.state.pag}`,  {mode:'cors'})
+        fetch(`https://apodgram-django-backend.herokuapp.com/images/?page=${this.state.pag}`,  {mode:'cors'})
         .then(res => res.json())
         .then(data => {
             for(let i = 0; i < 10 ; i++){
