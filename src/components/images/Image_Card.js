@@ -1,9 +1,11 @@
+// eslint-disable-next-line
 import React, { useState, setShow } from "react";
 import { Card, Button, Container, Row, Modal } from 'react-bootstrap'
 import './Image_Card.scss'
 const ImageCard = (props) => {
 
-    const [show] = useState(false);
+     // eslint-disable-next-line
+    const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
