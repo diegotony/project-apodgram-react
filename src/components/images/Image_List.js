@@ -24,15 +24,10 @@ class ImageList extends Component{
         .then(data => {
             for(let i = 0; i < 10 ; i++){
                 this.state.images.push(data.results[i])
-                // console.log("==> ",data.results[i])
-                // this.setState({images:this.state.images.push(data.results[i])})
             }
 
             this.setState({pag:this.state.pag+1})
         })
-        // this.setState({imagesResult:this.state.images.splice(0,this.state.min + 5)})
-        // this.setState({min:this.state.min + 5 })
-        // window.scrollTo({behavior:'smooth'})
     }
 
     
