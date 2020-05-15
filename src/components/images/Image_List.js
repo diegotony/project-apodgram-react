@@ -13,14 +13,7 @@ class ImageList extends Component{
         fetch( "https://apodgram-django-backend.herokuapp.com/images/", {mode:'cors'})
             .then(res => res.json())
             .then(data => {
-                let image_size_10 = []
-                this.setState({images:data})
-                this.setState({length:data.length})
-
-                for (let i = 0; i < 10; i++){
-                    image_size_10.push(data[i])
-                }
-                this.setState({imagesResult:image_size_10})
+                this.setState({images:data.results})
             
             }).catch()
     }

@@ -1,9 +1,9 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Card, Button, Container, Row } from 'react-bootstrap'
 import './Image_Card.scss'
 const ImageCard  = (props) => {
 
-    const [image, setIImage] = useState(props.image)
+    const [image] = useState(props.image)
         return (
 
             <Card className="card" >
