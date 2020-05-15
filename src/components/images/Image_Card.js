@@ -5,7 +5,6 @@ const ImageCard  = (props) => {
 
     const [image] = useState(props.image)
         return (
-
             <Card className="card" >
                 <Card.Img className="img" variant="top" src={image.url} />
                 <Card.Body className="body">
