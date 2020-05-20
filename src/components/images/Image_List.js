@@ -9,6 +9,10 @@ class ImageList extends Component{
         pag:2
 
     }
+    constructor(props){
+        super(props)
+        this.wrapper = React.createRef();
+    }
     componentDidMount() {
         fetch( "https://apodgram-django-backend.herokuapp.com/images/", {mode:'cors'})
             .then(res => res.json())
