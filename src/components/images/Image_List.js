@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, {Component} from "react";
 import ImageCard from "./Image_Card";
 import {CardColumns, Button} from 'react-bootstrap'
@@ -8,10 +9,6 @@ class ImageList extends Component{
         min: 10,
         pag:2
 
-    }
-    constructor(props){
-        super(props)
-        this.wrapper = React.createRef();
     }
     componentDidMount() {
         fetch( "https://apodgram-django-backend.herokuapp.com/images/", {mode:'cors'})
