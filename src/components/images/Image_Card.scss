@@ -13,6 +13,15 @@
         padding: 1em 1em 0em 1em;
     }
 
+    .view {
+        padding: 1em;
+        display: block;
+        margin: 0em 0.5em auto;
+    }
+    .buttons{
+        text-align: center;
+    }
+
 }
 
 
@@ -20,8 +29,6 @@
     .card {
         margin: 2em auto 2em auto;
     }
-
-
 
     .img {
         padding: 1em 1em 0em 1em;
@@ -34,7 +41,7 @@
 
     .view {
         padding: 1em;
+        margin: 0em 0.5em 0em 0.5em;
     }
-
 
 }
