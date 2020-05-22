@@ -7,7 +7,7 @@ class Contact extends Component {
             <div >
                 <Container fluid>
                     <Row>
-                        About
+                        Contact
                     </Row>
                 
                 </Container>
