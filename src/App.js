@@ -18,6 +18,7 @@ function App() {
         <div>
           <Navbar bg="dark" variant="dark" expand="lg">
             <Navbar.Brand href="#home">
+            <Link to={"/"}>  
               <img
                 alt=""
                 src="logo.svg"
@@ -25,13 +26,15 @@ function App() {
                 height="30"
                 className="d-inline-block align-top"
               />{" "}
+
               Apodgram
+              </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link>
-                  <Link to={"/home"}> Home </Link>
+                  <Link to={"/"}> Home </Link>
                 </Nav.Link>
                 <Nav.Link>
                   <Link to={"/images"}> Images </Link>
@@ -57,7 +60,7 @@ function App() {
             </Navbar.Collapse>
           </Navbar>
           <Switch>
-            <Route exact path="/home" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/images" component={Images} />
             <Route path="/contact" component={Contact} />
             <Route path="/about" component={About} />
