@@ -1,1 +1,4 @@
-# apodgram
+# Apodgram
+```
+npm start
+```
