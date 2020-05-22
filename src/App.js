@@ -39,9 +39,9 @@ function App() {
                 <Nav.Link>
                   <Link to={"/images"}> Images </Link>
                 </Nav.Link>
-                <Nav.Link>
+                {/* <Nav.Link>
                   <Link to={"/contact"}> Contact </Link>
-                </Nav.Link>
+                </Nav.Link> */}
 
 
                 <Nav.Link>
