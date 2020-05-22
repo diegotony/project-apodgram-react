@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Jumbotron } from "react-bootstrap";
+import {Jumbotron } from "react-bootstrap";
 import "./About.css";
 class About extends Component {
   render() {
